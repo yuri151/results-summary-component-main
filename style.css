@@ -1,0 +1,260 @@
+@font-face {
+    font-family: "HankenGrotesk";
+    src: url("/assets/fonts/HankenGrotesk-VariableFont_wght.ttf") format('opentype');
+}
+
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "HankenGrotesk", sans-serif ;
+    font-size: 18px;
+}
+
+#box{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}
+
+#conteudo{
+    width: 590px;
+    height: 370px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    border-radius: 23px;
+    background-color:white;
+    box-shadow: 2px 1px 35px 1px hsl(224, 30%, 90%);;
+    /* flex-direction: column; */
+}
+
+#result{
+    width: 50%;
+    height:100%;
+    border-radius: 23px;
+
+    background-image: linear-gradient(to top,  hsl(241, 81%, 54%), hsl(252, 100%, 67%) );
+
+    text-align: center;
+    align-items: center;
+    
+       
+}
+
+
+
+h1{
+    font-size: 18px;
+    opacity: .50;
+    color: white;
+
+    margin-top: 25px;
+    margin-bottom: 27px;
+    
+}
+
+#resultado-ciculo{
+    width: 140px;
+    height: 140px;
+    border-radius: 100px;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+    background-image: linear-gradient(to bottom , hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    color: white;
+
+}
+
+#resultado-ciculo span {
+    font-size: 12px;
+}
+
+#resultado-ciculo  {
+    font-size: 50px;
+    font-weight: 700;
+   
+}
+
+#msg-otimo{
+    font-size: 23px ;
+    font-weight: 700;
+
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#msg-65{
+    opacity: .65;
+    color: white;
+    font-size: 13px;
+
+    margin-left: 55px ;
+    margin-right: 55px ;
+
+}
+
+
+#summary{
+    width: 50%;
+    height: 100%;
+}
+
+li, button{
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+h2{
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    margin-left: 35px;
+}
+
+li{
+   width: 220px;
+   font-size: 14px;
+   list-style: none;
+   padding: 8px;
+   display: flex;
+   justify-content: space-between;
+   border-radius: 10px;
+}
+
+
+img{
+   width: 15px;
+   height: 15px;
+   margin: 5px 10px;
+}
+
+li div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+
+button{
+    width: 240px;
+    height: 40px;
+    font-size: 13px;
+    margin-top: 20px;
+    border-radius: 20px;
+
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    color: white;
+}
+
+span{
+    opacity: .40;
+}
+
+.summary-conteudo-list{
+    font-weight: 700;
+    color: black;
+}
+
+#summary-list-reaction{
+    background-color: hsl(0, 100%, 97%) ;
+    color:hsl(0, 100%, 67%) ;
+}
+
+#summary-list-memory{
+    background-color:  hsl(39, 100%, 96%);
+    color: hsl(39, 100%, 56%);
+}
+
+#summary-list-verbal{
+    background-color:   hsl(166, 100%, 97%);
+    color:  hsl(166, 100%, 37%);
+}
+
+#summary-list-visual{
+    background-color: hsl(234, 85%, 95%);
+    color: hsl(234, 85%, 45%);
+}
+
+@media (max-width: 500px) {
+    #conteudo{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #result{
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        border-bottom-left-radius:25px;
+        border-bottom-right-radius: 25px;
+     
+    }
+
+    #resultado-ciculo{
+        width: 100px;
+        height: 100px;
+        font-size: 40px;
+    }
+
+    #msg-otimo{
+        font-size: 19px;
+        margin: 15px 0px 5px  ;
+
+    }
+  
+    #msg-65{
+        margin-bottom: 20px;
+    }
+    h1{
+        font-size: 15px;
+        margin: 15px;
+    }
+
+
+    #summary{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    h2{
+        font-size: 15px;
+        margin: 15px 0px 10px 30px;
+    }
+    li{
+        margin: 10;
+        width: 250px;
+    }
+
+    button{
+        margin: 5px 0px 20px 0px;
+        width: 260px;
+    }
+}
