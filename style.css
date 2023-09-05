@@ -201,7 +201,7 @@ span{
     color: hsl(234, 85%, 45%);
 }
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
     #conteudo{
         display: flex;
         flex-direction: column;
@@ -247,6 +247,7 @@ span{
     h2{
         font-size: 15px;
         margin: 15px 0px 10px 30px;
+        
     }
     li{
         margin: 10;
@@ -255,6 +256,65 @@ span{
 
     button{
         margin: 5px 0px 20px 0px;
+        width: 260px;
+    }
+} */
+
+@media (max-width: 385px) {
+    #conteudo{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #result{
+        width: 100vw;
+        height: 70vh;
+        border-radius: 0;
+        border-bottom-left-radius:25px;
+        border-bottom-right-radius: 25px;
+     
+    }
+
+    #resultado-ciculo{
+        width: 120px;
+        height: 120px;
+        font-size: 40px;
+    }
+
+    #msg-otimo{
+        font-size: 19px;
+        margin: 15px 0px 5px  ;
+
+    }
+  
+    #msg-65{
+        margin-bottom: 20px;
+    }
+    h1{
+        font-size: 15px;
+        margin: 15px;
+    }
+
+
+    #summary{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    h2{
+        font-size: 15px;
+        margin: 15px 0px 10px 45px;
+        
+    }
+    li{
+        margin: 10;
+        width: 270px;
+    }
+
+    button{
+        margin: 10px 0px 20px 0px;
         width: 260px;
     }
 }
